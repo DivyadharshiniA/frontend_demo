@@ -217,7 +217,7 @@ const User = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3000/api/user/fetch")
+      .get("https://backend-demo-3-r7kc.onrender.com")
       .then((res) => {
         console.log(res.data);
         setUsers(res.data.data); // Assuming the API returns data in res.data.data

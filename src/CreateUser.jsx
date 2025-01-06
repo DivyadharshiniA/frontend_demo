@@ -38,7 +38,7 @@ const Createuser = () => {
   const submit = (e) => {
     e.preventDefault();
     axios
-      .post("http://localhost:3000/api/user/create", { name, email, address })
+      .post("https://backend-demo-3-r7kc.onrender.com", { name, email, address })
       .then((result) => {
         console.log(result.data);
         navigate("/");
