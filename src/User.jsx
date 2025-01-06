@@ -230,7 +230,7 @@ const User = () => {
   const deleteUser = (id) => {
     if (window.confirm("Are you sure you want to delete this user?")) {
       axios
-        .delete(`http://localhost:3000/api/user/delete/${id}`)
+        .delete(`https://backend-demo-3-r7kc.onrender.com}`)
         .then(() => {
           alert("User deleted successfully");
           setUsers(users.filter((user) => user._id !== id)); // Update the UI after deletion
